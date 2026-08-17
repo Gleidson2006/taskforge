@@ -14,6 +14,9 @@ void main() {
     String nome = IO.readln("Nome da tarefa: ");
     String descricao = IO.readln("Descrição: ");
     int prioridade = Integer.parseInt(IO.readln("Prioridade (1 a 5): "));
+    String responsavel = IO.readln("responsavel: ");
+    double horasEstimadas = Double.parseDouble(IO.readln("Horas estimadas: "));
+    String status = "pendente";
 
     IO.println("");
     IO.println("------ TAREFA CRIADA ------");
