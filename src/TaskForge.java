@@ -8,8 +8,19 @@
 //   - No IntelliJ: abra este arquivo e clique em Run.
 //   - No terminal: java TaskForge.java
 
+import src.Tarefa;
+
 void main() {
     IO.println("=== TaskForge v0 ===");
+
+    Tarefa tarefa = new Tarefa("estudar Java", "Descricao Tarefa", 1,
+            "Eu mesmo", 2, 1);
+
+    Tarefa tarefa2 = new Tarefa("estudar frontende", "Estudar react", 1,
+            "Gleidson Gabriel", 2, 1);
+
+    IO.println("Tarefa criada: " + tarefa.getNome());
+    IO.println("tarefa criada:" + tarefa2.getNome() );
 
     String nome = IO.readln("Nome da tarefa: ");
     String descricao = IO.readln("Descrição: ");
